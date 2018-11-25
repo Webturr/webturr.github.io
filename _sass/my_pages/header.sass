@@ -1,0 +1,100 @@
+header
+	width: 100%
+	margin: auto
+	position: absolute
+	top: 0
+	.hed_position
+		max-width: 1170px
+		margin: auto
+		display: grid
+		grid-template-rows: 30px 100px
+		position: relative
+		Z-index: 22
+		.hed_line
+			background-color: $accent
+		.hed_nav
+			display: grid
+			grid-template-columns: 1fr 4fr
+			background-color: #fff
+			padding: 0 40px
+			align-items: center
+			position: relative
+			.logo
+				display: flex
+				color: $accent
+				p
+					text-transform: uppercase
+					font-size: 12px
+					font-weight: 600
+					margin-left: 10px
+					span
+						font-size: 20px
+						font-weight: 800
+			.logo:hover
+				color: $accent
+			nav
+				text-align: right
+				a
+					margin-right: 40px
+					color: $accent
+					text-decoration: none
+					font-weight: 700
+					font-size: 16px
+					transition: .3s
+				a:hover
+					color: $yellow
+
+
+// иконки сверху
+
+.hed_line
+	.social-menu
+		margin-right: 60px
+		a
+			.fa
+				font-family: "Font Awesome 5 Brands"
+				color: #fff
+				font-weight: 100
+				float: right
+				line-height: 30px
+				margin-right: $gatter
+				transition: 0.3s
+			.fa:hover
+				color: $yellow
+
+/* Адаптация Хедера */
+
+@media (max-width: 768px)
+	header
+		.hed_position
+			margin: auto
+			.hed_nav
+				grid-template-columns: 3fr 1fr
+				padding: 0 10px
+				nav
+					display: none
+				.hamburger
+					display: block
+					margin-right: 20px
+
+
+@media (max-width: 480px)
+	.hed_line
+		.social-menu
+			margin-right: 10px
+
+// стилизация мменю
+
+.hamburger
+	position: absolute
+	right: 0px
+
+.hamburger-box
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+		border-radius: 1px
+		background-color: $black
+		width: 35px
+		height: 3px
+
+
+
