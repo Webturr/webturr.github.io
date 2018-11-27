@@ -276,11 +276,36 @@
 			color: $text-p
 		.specials
 			display: grid
-			grid-template-columns: 1fr 1fr
 
 			h3
 				font-size: 17px
 				font-weight: 600
+
+			.spec-kurorts
+				grid-template-columns: 1fr 1fr
+				margin-top: 40px
+				grid-gap: $gatter
+				width: 60%
+				a
+					color: $accent
+					background-color: $gray
+					padding: 10px
+					padding-left: 20px
+					padding-right: 0
+					font-size: 15px
+				a:hover
+					background-color: $blue
+					color: #fff
+
+@media (max-width: 900px)
+	.tab_content
+		.tab_item
+			.specials
+				.spec-kurorts
+					width: 100%
+					a
+						font-size: 14px
+						font-weight: 600
 
 @media (max-width: 655px)
 	.tab-about

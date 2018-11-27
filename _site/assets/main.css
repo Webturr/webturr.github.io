@@ -204,7 +204,7 @@ section {
 
 #my-page {
   display: grid;
-  grid-gap: 40px; }
+  grid-gap: 80px; }
 
 a {
   color: #011144;
@@ -379,7 +379,6 @@ header {
 footer .sections {
   background-color: #011144;
   color: #fff;
-  margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 20px;
@@ -481,7 +480,7 @@ footer .footline {
   .slider .heading .line-paragraf {
     line-height: 1.4; } }
 .subscribe {
-  margin-top: -40px;
+  margin-top: -80px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 250px;
   align-items: center; }
@@ -674,12 +673,32 @@ footer .footline {
   .tab_content .tab_item p {
     color: #434c66; }
   .tab_content .tab_item .specials {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
+    display: grid; }
     .tab_content .tab_item .specials h3 {
       font-size: 17px;
       font-weight: 600; }
+    .tab_content .tab_item .specials .spec-kurorts {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 40px;
+      grid-gap: 15px;
+      width: 60%; }
+      .tab_content .tab_item .specials .spec-kurorts a {
+        color: #011144;
+        background-color: #F6F6F6;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 0;
+        font-size: 15px; }
+      .tab_content .tab_item .specials .spec-kurorts a:hover {
+        background-color: #1fc8d3;
+        color: #fff; }
 
+@media (max-width: 900px) {
+  .tab_content .tab_item .specials .spec-kurorts {
+    width: 100%; }
+    .tab_content .tab_item .specials .spec-kurorts a {
+      font-size: 14px;
+      font-weight: 600; } }
 @media (max-width: 655px) {
   .tab-about .wrapper {
     grid-template-columns: 1fr; } }
