@@ -58,7 +58,6 @@
 // Форма Подписки
 
 .subscribe
-	margin-top: -80px
 	grid-template-columns: 1fr 1fr
 	grid-template-rows: 250px
 	align-items: center
@@ -84,28 +83,28 @@
 		display: grid
 		align-items: center
 		
-		.subscribe-right
-			margin-top: 30px
-			max-width: 500px
-			padding-right: $gatter
-			padding-left: $gatter
-			justify-items: end
-			display: grid
-			input
-				padding: 15px 20px
-				margin-right: 0
-				text-align: left
-				width: 80%
-				border: none
-				border-radius: 50px
-				margin-bottom: 30px
-			.button
-				display: inline
-				padding: 12px 25px
-				border: 2px solid $yellow
-			.button:hover
-				background-color: #fff
-				color: $yellow
+.subscribe-right
+	margin-top: 30px
+	max-width: 500px
+	padding-right: $gatter
+	padding-left: $gatter
+	justify-items: end
+	display: grid
+	input
+		padding: 15px 20px
+		margin-right: 0
+		text-align: left
+		width: 80%
+		border: none
+		border-radius: 50px
+		margin-bottom: 30px
+	.button
+		display: inline
+		padding: 12px 25px
+		border: 2px solid $yellow
+	.button:hover
+		background-color: #fff
+		color: $yellow
 
 
 // адаптация формы подписки
@@ -122,50 +121,26 @@
 
 // конец формы подписки
 
-.main-turs
-	max-width: 1600px
-	margin: auto
-	.heading
-		padding: 40px
-		color: $accent
-		text-align: left
-		p
-			margin-top: $gatter*2
-	.main-turs-country
-		display: grid
-		grid-template-columns: 1fr 1fr 1fr 1fr
-		grid-gap: $gatter*2
-		padding-left: $gatter*2
-		padding-right: $gatter*2
-		.tur-box
-			display: grid
-			grid-gap: $gatter
-			a
-				color: $accent
-			a:hover
-				color: $yellow
-			p
-				text-align: left
-			.button
-				background-color: $yellow
-				padding: 13px 15px
-				color: #fff
-				text-align: center
-				width: 150px
-				margin: auto
-			.button:hover
-				color: #fff
-				background-color: $accent
-			.img-box
-				height: 250px
-				overflow: hidden
-				.img-box-tur
-					height: 250px
-					background-size: cover
-					background-repeat: no-repeat
-					transition: 0.3s
-			.img-box-tur:hover
-				transform: scale(1.2)
+.owl-carousel 
+	.owl-stage
+		margin: auto
+.tur-box
+	display: grid
+	grid-gap: $gatter
+	.img-box
+		height: 250px
+		overflow: hidden
+		.img-box-tur
+			height: 250px
+			background-size: cover
+			background-repeat: no-repeat
+			transition: 0.3s
+		.img-box-tur:hover
+			transform: scale(1.2)
+	.button
+		margin: auto
+		padding-left: 20px
+		padding-right: 20px
 
 @media (max-width: 1200px)
 	.main-turs

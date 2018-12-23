@@ -202,9 +202,8 @@ th {
 section {
   text-align: center; }
 
-#my-page {
-  display: grid;
-  grid-gap: 80px; }
+section {
+  margin-bottom: 40px; }
 
 a {
   color: #011144;
@@ -480,7 +479,6 @@ footer .footline {
   .slider .heading .line-paragraf {
     line-height: 1.4; } }
 .subscribe {
-  margin-top: -80px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 250px;
   align-items: center; }
@@ -504,28 +502,29 @@ footer .footline {
     height: 100%;
     display: grid;
     align-items: center; }
-    .subscribe .container-right .subscribe-right {
-      margin-top: 30px;
-      max-width: 500px;
-      padding-right: 15px;
-      padding-left: 15px;
-      justify-items: end;
-      display: grid; }
-      .subscribe .container-right .subscribe-right input {
-        padding: 15px 20px;
-        margin-right: 0;
-        text-align: left;
-        width: 80%;
-        border: none;
-        border-radius: 50px;
-        margin-bottom: 30px; }
-      .subscribe .container-right .subscribe-right .button {
-        display: inline;
-        padding: 12px 25px;
-        border: 2px solid #F4B200; }
-      .subscribe .container-right .subscribe-right .button:hover {
-        background-color: #fff;
-        color: #F4B200; }
+
+.subscribe-right {
+  margin-top: 30px;
+  max-width: 500px;
+  padding-right: 15px;
+  padding-left: 15px;
+  justify-items: end;
+  display: grid; }
+  .subscribe-right input {
+    padding: 15px 20px;
+    margin-right: 0;
+    text-align: left;
+    width: 80%;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 30px; }
+  .subscribe-right .button {
+    display: inline;
+    padding: 12px 25px;
+    border: 2px solid #F4B200; }
+  .subscribe-right .button:hover {
+    background-color: #fff;
+    color: #F4B200; }
 
 @media (max-width: 480px) {
   .subscribe .container .heading h2 {
@@ -533,50 +532,26 @@ footer .footline {
     margin-bottom: 15px; }
   .subscribe .container .heading p {
     line-height: 1.2; } }
-.main-turs {
-  max-width: 1600px;
+.owl-carousel .owl-stage {
   margin: auto; }
-  .main-turs .heading {
-    padding: 40px;
-    color: #011144;
-    text-align: left; }
-    .main-turs .heading p {
-      margin-top: 30px; }
-  .main-turs .main-turs-country {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-    padding-left: 30px;
-    padding-right: 30px; }
-    .main-turs .main-turs-country .tur-box {
-      display: grid;
-      grid-gap: 15px; }
-      .main-turs .main-turs-country .tur-box a {
-        color: #011144; }
-      .main-turs .main-turs-country .tur-box a:hover {
-        color: #F4B200; }
-      .main-turs .main-turs-country .tur-box p {
-        text-align: left; }
-      .main-turs .main-turs-country .tur-box .button {
-        background-color: #F4B200;
-        padding: 13px 15px;
-        color: #fff;
-        text-align: center;
-        width: 150px;
-        margin: auto; }
-      .main-turs .main-turs-country .tur-box .button:hover {
-        color: #fff;
-        background-color: #011144; }
-      .main-turs .main-turs-country .tur-box .img-box {
-        height: 250px;
-        overflow: hidden; }
-        .main-turs .main-turs-country .tur-box .img-box .img-box-tur {
-          height: 250px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          transition: 0.3s; }
-      .main-turs .main-turs-country .tur-box .img-box-tur:hover {
-        transform: scale(1.2); }
+
+.tur-box {
+  display: grid;
+  grid-gap: 15px; }
+  .tur-box .img-box {
+    height: 250px;
+    overflow: hidden; }
+    .tur-box .img-box .img-box-tur {
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: 0.3s; }
+    .tur-box .img-box .img-box-tur:hover {
+      transform: scale(1.2); }
+  .tur-box .button {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px; }
 
 @media (max-width: 1200px) {
   .main-turs .main-turs-country {

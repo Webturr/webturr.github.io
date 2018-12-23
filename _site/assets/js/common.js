@@ -21,4 +21,32 @@
                 $('.hamburger').removeClass('is-active');
             })
         });
+//слайдер карусели
 
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
+
+$(".tab_item").not(":first").hide();
+$(".wrapper .tab").click(function() {
+    $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
