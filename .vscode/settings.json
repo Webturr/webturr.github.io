@@ -1,0 +1,21 @@
+{
+    "git.ignoreMissingGitWarning": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\bash.exe",
+    "files.defaultLanguage": "html",
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "workbench.editor.tabSizing": "shrink",
+    "editor.detectIndentation": false,
+    "editor.glyphMargin": false,
+    "editor.smoothScrolling": true,
+    "emmet.triggerExpansionOnTab": true,
+
+    "editor.suggestOnTriggerCharacters": false,
+    "terminal.integrated.fontSize": 15,
+		"editor.renderWhitespace": "boundary",
+		"emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+		"sassFormat.dasherize": true,
+		"emmet.optimizeStylesheetParsing": false
+		
+}
