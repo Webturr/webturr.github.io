@@ -211,7 +211,8 @@ section {
   margin: auto;
   text-align: left;
   color: #011144;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-left: 4px solid #F4B200; }
   .heading h2 {
     padding: 10px;
     padding-left: 0; }
@@ -251,9 +252,6 @@ body {
 
 .grid {
   display: grid; }
-
-.hed_position .hamburger {
-  display: none; }
 
 .warning {
   color: #F4B200;
@@ -325,16 +323,13 @@ a {
 
 header {
   width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 0; }
+  margin: auto; }
   header .hed_position {
     max-width: 1170px;
     margin: auto;
     display: grid;
     grid-template-rows: 30px 100px;
-    position: relative;
-    Z-index: 22; }
+    position: relative; }
     header .hed_position .hed_line {
       background-color: #011144; }
     header .hed_position .hed_nav {
@@ -343,7 +338,8 @@ header {
       background-color: #fff;
       padding: 0 40px;
       align-items: center;
-      position: relative; }
+      position: relative;
+      box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.15); }
       header .hed_position .hed_nav .logo {
         display: flex;
         color: #011144; }
@@ -359,14 +355,14 @@ header {
         color: #011144; }
       header .hed_position .hed_nav nav {
         text-align: right; }
-        header .hed_position .hed_nav nav a {
+        header .hed_position .hed_nav nav li a {
           margin-right: 40px;
           color: #011144;
           text-decoration: none;
           font-weight: 700;
           font-size: 16px;
           transition: 0.3s; }
-        header .hed_position .hed_nav nav a:hover {
+        header .hed_position .hed_nav nav li a:hover {
           color: #F4B200; }
 
 .hed_line .social-menu {
@@ -390,10 +386,7 @@ header {
       grid-template-columns: 3fr 1fr;
       padding: 0 10px; }
       header .hed_position .hed_nav nav {
-        display: none; }
-      header .hed_position .hed_nav .hamburger {
-        display: block;
-        margin-right: 20px; } }
+        display: none; } }
 @media (max-width: 480px) {
   .hed_line .social-menu {
     margin-right: 10px; } }
@@ -478,11 +471,19 @@ footer .footline {
     text-transform: capitalize;
     color: #fff;
     padding: 10px;
-    line-height: 1; }
+    line-height: 1;
+    border-left: none; }
     .slider .heading h1 {
-      font-size: 70px;
+      font-size: 90px;
       margin: 0;
-      color: #fff; }
+      color: #fff;
+      line-height: 0.5;
+      letter-spacing: 4px;
+      font-weight: 900; }
+      .slider .heading h1 span {
+        font-size: 14px;
+        letter-spacing: normal;
+        font-weight: 600; }
     .slider .heading .line-paragraf {
       letter-spacing: normal;
       margin-top: 40px;
@@ -506,8 +507,7 @@ footer .footline {
 
 @media (max-width: 480px) {
   .slider .heading h1 {
-    font-size: 55px;
-    line-height: 1; }
+    font-size: 75px; }
   .slider .heading .line-paragraf {
     line-height: 1.4; } }
 .subscribe {
@@ -535,7 +535,6 @@ footer .footline {
     align-items: center; }
 
 .subscribe-right {
-  margin-top: 30px;
   max-width: 500px;
   padding-right: 15px;
   padding-left: 15px;
