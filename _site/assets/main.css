@@ -323,7 +323,10 @@ a {
 
 header {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  position: absolute;
+  top: 0;
+  z-index: 1; }
   header .hed_position {
     max-width: 1170px;
     margin: auto;
