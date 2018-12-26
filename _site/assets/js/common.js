@@ -20,7 +20,6 @@
     }(), t.extend(o.prototype, {
         speed: .2,
         bleed: 0,
-        zIndex: -100,
         iosFix: !0,
         androidFix: !0,
         position: "center",

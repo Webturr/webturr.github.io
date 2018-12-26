@@ -6,17 +6,22 @@
 <body>
 
 <div id="my-page">
-	{% include header.html %}
-
-		<div class="second-heading">
-	  {%- if page.title -%}
-	    <h1 class="page-heading">{{ page.title }}</h1>
-	  {%- endif -%}
-		</div>
-		
-  {{ content }}
-
-	{% include footer.html %}
+  <div class="second-page">
+    {% include header.html %}
+      <div class="parallax-window" data-parallax="scroll" data-image-src="/assets/img/kurorts/{{ page.url-slider-img}}/{{ page.url-slider-img}}.jpg">
+      {%- if page.title -%}
+      <div class="container">
+        <div class="post-heading">
+          <h1>{{ page.title }}<br><span>Отели, Билеты, Аренда авто</span></h1>
+        </div>
+      </div>
+      {%- endif -%}
+      </div>
+    <div class="post-content">
+    {{ content }}
+    </div>  
+    {% include footer.html %}
+  </div>
 </div>
 
 </body>
