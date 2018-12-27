@@ -749,12 +749,20 @@ footer .footline {
       margin: auto; }
   .second-page .parallax-window {
     height: 400px;
-    position: relative; }
+    position: relative;
+    max-width: 1290px;
+    margin: auto;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1); }
     .second-page .parallax-window .container {
       max-width: 1170px;
       margin: auto;
       width: 100%;
       text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); }
+  .second-page .parallax-window:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: calc(50% - 645px); }
 
 .post-heading {
   margin-bottom: 40px;
@@ -780,8 +788,10 @@ footer .footline {
   padding-bottom: 40px;
   max-width: 1170px;
   margin: auto;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   background-color: #fff;
   box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1); }
   .post-content p {
@@ -789,6 +799,10 @@ footer .footline {
     text-align: justify;
     margin-left: 0; }
 
+@media (max-width: 1300px) {
+  .post-content {
+    padding-left: 15px;
+    padding-right: 15px; } }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

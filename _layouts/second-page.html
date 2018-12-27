@@ -8,15 +8,16 @@
 <div id="my-page">
   <div class="second-page">
     {% include header.html %}
-      <div class="parallax-window" data-parallax="scroll" data-image-src="/assets/img/kurorts/{{ page.url-slider-img}}/{{ page.url-slider-img}}.jpg">
-      {%- if page.title -%}
-      <div class="container">
-        <div class="post-heading">
-          <h1>{{ page.title }}<br><span>Отели, Билеты, Аренда авто</span></h1>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="/assets/img/kurorts/{{ page.url-slider-img}}/{{ page.url-slider-img}}.jpg">
+          {%- if page.title -%}
+            <div class="container">
+              <div class="post-heading">
+                <h1>{{ page.title }}<br><span>Отели, Билеты, Аренда авто</span></h1>
+              </div>
+            </div>
+          {%- endif -%}
         </div>
-      </div>
-      {%- endif -%}
-      </div>
+      
     <div class="post-content">
     {{ content }}
     </div>  
