@@ -183,13 +183,14 @@
   color: #fff
   padding-top: 40px
   padding-bottom: 40px
-  .fa
-    font-size: 30px
+  img
+    width: 50px
+    height: 50px
   .hotels, .turs, .airtickets
     border-right: 1px $yellow solid
   .item
-  padding-left: 20px
-  padding-right: 20px
+    padding-left: 20px
+    padding-right: 20px
   p
     color: #fff
     padding-left: 10px
@@ -248,6 +249,7 @@
         text-transform: uppercase
         text-align: left
         transition: 0.2s
+        justify-items: center
       .tab:hover
         background-color: $blue
         color: #fff
@@ -309,3 +311,7 @@
   .tab-about
     .wrapper
       grid-template-columns: 1fr
+      .tabs
+        grid-template-rows: 45px 45px 45px
+        .tab
+          padding: 13px 10px

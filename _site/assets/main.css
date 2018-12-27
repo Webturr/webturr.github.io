@@ -205,6 +205,9 @@ section {
 section {
   margin-bottom: 40px; }
 
+@media (max-width: 650px) {
+  section {
+    margin-bottom: 5px; } }
 .heading {
   padding: 20px;
   max-width: 1170px;
@@ -212,13 +215,18 @@ section {
   text-align: left;
   color: #011144;
   margin-bottom: 40px;
-  border-left: 4px solid #F4B200; }
+  border-left: 4px solid #F4B200;
+  margin-left: 10px; }
   .heading h2 {
     padding: 10px;
     padding-left: 0; }
   .heading p {
     font-size: 16px; }
 
+@media (max-width: 650px) {
+  .heading {
+    margin-bottom: 5px;
+    border-left: none; } }
 a {
   color: #011144;
   text-decoration: none;
@@ -241,6 +249,9 @@ h2 {
   padding-left: 0;
   padding: 15px; }
 
+@media (max-width: 480px) {
+  h2 {
+    font-size: 30px; } }
 h3 {
   font-weight: 500;
   font-size: 20px;
@@ -349,6 +360,9 @@ header {
       header .hed_position .hed_nav .logo {
         display: flex;
         color: #011144; }
+        header .hed_position .hed_nav .logo img {
+          width: 50px;
+          height: 50px; }
         header .hed_position .hed_nav .logo p {
           text-transform: uppercase;
           font-size: 12px;
@@ -603,13 +617,15 @@ footer .footline {
   background-color: #011144;
   color: #fff;
   padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px; }
-  .services .fa {
-    font-size: 30px; }
+  padding-bottom: 40px; }
+  .services img {
+    width: 50px;
+    height: 50px; }
   .services .hotels, .services .turs, .services .airtickets {
     border-right: 1px #F4B200 solid; }
+  .services .item {
+    padding-left: 20px;
+    padding-right: 20px; }
   .services p {
     color: #fff;
     padding-left: 10px;
@@ -659,7 +675,8 @@ footer .footline {
         font-size: 15px;
         text-transform: uppercase;
         text-align: left;
-        transition: 0.2s; }
+        transition: 0.2s;
+        justify-items: center; }
       .tab-about .wrapper .tabs .tab:hover {
         background-color: #1fc8d3;
         color: #fff; }
@@ -712,7 +729,11 @@ footer .footline {
       font-weight: 600; } }
 @media (max-width: 655px) {
   .tab-about .wrapper {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .tab-about .wrapper .tabs {
+      grid-template-rows: 45px 45px 45px; }
+      .tab-about .wrapper .tabs .tab {
+        padding: 13px 10px; } }
 .second-page {
   background-color: #efefef; }
   .second-page header {
@@ -726,34 +747,41 @@ footer .footline {
     .second-page .parallax-window .container {
       max-width: 1170px;
       margin: auto;
-      width: 100%; }
-      .second-page .parallax-window .container .post-heading {
-        margin-bottom: 40px;
-        padding: 0;
-        padding-left: 20px;
-        position: relative;
-        border-left: 3px #F4B200 solid; }
-        .second-page .parallax-window .container .post-heading h1 {
-          color: #fff;
-          font-weight: 500;
-          line-height: 0.6; }
-          .second-page .parallax-window .container .post-heading h1 span {
-            font-size: 16px; }
-  .second-page .post-content {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    max-width: 1170px;
-    margin: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #fff;
-    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    margin-bottom: 20px; }
-    .second-page .post-content p {
-      margin: 10px;
-      text-align: justify;
-      margin-left: 0; }
+      width: 100%;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); }
+
+.post-heading {
+  margin-bottom: 40px;
+  padding: 0;
+  margin-left: 5%;
+  padding-left: 20px;
+  position: relative;
+  border-left: 3px #F4B200 solid; }
+  .post-heading h1 {
+    color: #fff;
+    font-weight: 500;
+    line-height: 0.6; }
+    .post-heading h1 span {
+      font-size: 16px; }
+
+@media (max-width: 650px) {
+  .second-page .post-heading h1 {
+    line-height: 1; }
+    .second-page .post-heading h1 span {
+      line-height: 0.4; } }
+.post-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1); }
+  .post-content p {
+    margin: 10px;
+    text-align: justify;
+    margin-left: 0; }
 
 /*!
  * Hamburgers
