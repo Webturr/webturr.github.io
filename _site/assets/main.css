@@ -215,8 +215,7 @@ section {
   text-align: left;
   color: #011144;
   margin-bottom: 40px;
-  border-left: 4px solid #F4B200;
-  margin-left: 10px; }
+  border-left: 4px solid #F4B200; }
   .heading h2 {
     padding: 10px;
     padding-left: 0; }
@@ -302,6 +301,18 @@ body {
 .owl-carousel .owl-dots .active span {
   background: #F4B200;
   border: 2px solid #F4B200; }
+
+.mm-listitem:hover {
+  background-color: #011144; }
+
+.mm-listitem:active {
+  background-color: #F4B200; }
+
+.mm-listitem__text {
+  font-weight: 500; }
+
+.mm-navbar__title img {
+  opacity: 0.5; }
 
 body {
   background-color: white;

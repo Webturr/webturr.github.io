@@ -1,6 +1,7 @@
 section
   margin-bottom: 40px
 
+
 @media (max-width: 650px)
   section 
     margin-bottom: 5px
@@ -16,7 +17,6 @@ section
   color: $accent
   margin-bottom: 40px
   border-left: 4px solid $yellow
-  margin-left: 10px
   h2
     padding: 10px
     padding-left: 0
@@ -121,3 +121,19 @@ body
       span 
         background: $yellow
         border: 2px solid $yellow
+
+
+//////////////////////////////////
+// Стилизация Mmenu
+//////////////////////////////////
+.mm-listitem:hover
+  background-color: $accent
+.mm-listitem:active
+  background-color: $yellow
+
+.mm-listitem__text
+  font-weight: 500
+
+.mm-navbar__title
+  img 
+    opacity: 0.5

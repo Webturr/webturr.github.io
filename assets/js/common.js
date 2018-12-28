@@ -99,9 +99,10 @@
 
 $(document).ready(function() {
     $("#my-menu").mmenu({
-        extensions: ['effect-menu-slide', 'pagedim-black', "fx-listitems-fade", 'position-right'],
+        extensions: ['effect-menu-slide', 'pagedim-black', "fx-listitems-fade", 'position-right', 'theme-dark'],
+        "counters": true,
         navbar: {
-            //title: '<img src="/assets/img/main/logo-1.png">'
+          title: '<img src="/assets/img/icons/logo.svg">'
         },
     }, {
         // configuration
